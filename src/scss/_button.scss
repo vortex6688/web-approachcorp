@@ -1,0 +1,25 @@
+// Buttons
+
+.button-round {
+  padding: 0.25em 0.75em 0.2em;
+
+  &.round {
+    border-radius: 0.5em;
+  }
+
+  &.success {
+    background: #198b56;
+
+    &:hover {
+      background: darken(#198b56, 15%);
+    }
+  }
+
+  &.orange {
+    background: #f1a503;
+
+    &:hover {
+      background: lighten(#f1a503, 15%);
+    }
+  }
+}

@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 16px;
+  line-height: 23px; }
+  @media (max-width: 1024px) {
+    html {
+      font-size: 15px; } }
+  @media (max-width: 640px) {
+    html {
+      font-size: 14px; } }
+  @media (max-width: 480px) {
+    html {
+      font-size: 13px; } }
+
+p {
+  font-size: 18px; }
+  @media (max-width: 1024px) {
+    p {
+      font-size: 16px; } }
+  @media (max-width: 640px) {
+    p {
+      font-size: 14px; } }
+  @media (max-width: 480px) {
+    p {
+      font-size: 12px; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Comfortaa', cursive; }
+
+h1 {
+  font-size: 3em;
+  padding: 0.5em 0.25em 0.75em; }
+
+h2 {
+  font-size: 2.6em;
+  padding: 0.5em 0.25em; }
+
+h3 {
+  font-size: 2.2em;
+  padding: 0.5em 0.25em; }
+
+h4 {
+  font-size: 1.8em;
+  padding: 0.5em 0.25em; }
+
+h5 {
+  font-size: 1.2em;
+  padding: 0.25em; }
+
+h5 {
+  font-size: 1em;
+  padding: 0.125em; }
+
+.button-round {
+  padding: 0.25em 0.75em 0.2em; }
+  .button-round.round {
+    border-radius: 0.5em; }
+  .button-round.success {
+    background: #198b56; }
+    .button-round.success:hover {
+      background: #0d4a2e; }
+  .button-round.orange {
+    background: #f1a503; }
+    .button-round.orange:hover {
+      background: #fdc244; }
+
+html {
+  height: 100%; }
+
+body {
+  background: #252322;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 2em;
+  font-family: 'Comfortaa', cursive; }
+  header nav {
+    display: flex; }
+  header a {
+    padding-right: 1em;
+    text-decoration: none;
+    color: #fff; }
+    header a:hover {
+      transform: scale(1.125);
+      transition: 0.5s; }
+
+.main {
+  flex: 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 8em; }
+
+.desktop-svg {
+  margin: 2em 0;
+  max-width: 18em; }
+
+footer {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 1em 0; }
+
+.portfolio {
+  margin: 2em 0;
+  display: flex;
+  flex-wrap: wrap; }
+
+.case-study {
+  transition: 0.5s;
+  position: relative;
+  margin: 0.5em 1em;
+  transform: scale(1);
+  max-width: 30%;
+  display: grid; }
+  .case-study img {
+    padding: 0.5em;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 0.25em; }
+  .case-study::after {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 0 0.5em;
+    border-radius: 0.25em;
+    content: ''; }
+  .case-study .case-study-title {
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    color: #b48505;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding-top: 2em;
+    z-index: 100; }
+  .case-study:hover {
+    transition: 0.5s;
+    transform: scale(1.0125); }
+    .case-study:hover::after {
+      opacity: 1; }
+    .case-study:hover .case-study-title {
+      opacity: 1; }

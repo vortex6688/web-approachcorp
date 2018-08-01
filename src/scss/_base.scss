@@ -1,0 +1,78 @@
+$html-font-size-lg: 16px;
+$html-font-size-md: 15px;
+$html-font-size-sm: 14px;
+$html-font-size-xs: 13px;
+
+$paragraph-font-size-lg: 18px;
+$paragraph-font-size-md: 16px;
+$paragraph-font-size-sm: 14px;
+$paragraph-font-size-xs: 12px;
+
+html {
+    
+    font-size: $html-font-size-lg;
+    line-height: 23px;
+    
+    @media (max-width: 1024px) {
+        font-size: $html-font-size-md;
+    }
+    
+    @media (max-width: 640px) {
+        font-size: $html-font-size-sm;
+    }
+    
+    @media (max-width: 480px) {
+        font-size: $html-font-size-xs;
+    }
+    
+}
+
+p {
+  font-size: $paragraph-font-size-lg;
+  
+  @media (max-width: 1024px) {
+      font-size: $paragraph-font-size-md;
+  }
+  
+  @media (max-width: 640px) {
+      font-size: $paragraph-font-size-sm;
+  }
+  
+  @media (max-width: 480px) {
+      font-size: $paragraph-font-size-xs;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Comfortaa', cursive;
+}
+
+h1 {
+  font-size: 3em;
+  padding: 0.5em 0.25em 0.75em;
+}
+
+h2 {
+  font-size: 2.6em;
+  padding: 0.5em 0.25em;
+}
+
+h3 {
+  font-size: 2.2em;
+  padding: 0.5em 0.25em;
+}
+
+h4 {
+  font-size: 1.8em;
+  padding: 0.5em 0.25em;
+}
+
+h5 {
+  font-size: 1.2em;
+  padding: 0.25em;
+}
+
+h5 {
+  font-size: 1em;
+  padding: 0.125em;
+}
