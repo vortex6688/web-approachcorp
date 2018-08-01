@@ -1,0 +1,58 @@
+// Case Study block 
+// Should Be Re-used For any additional case studies 
+// Portfolio Parent Container sets the number of columns displayed and scales depending on the screen size
+.portfolio {
+  margin: 2em 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.case-study {
+  transition: 0.5s;
+  position: relative;
+  margin: 0.5em;
+  transform: scale(1);
+  display: grid;
+  padding: 0.5em;
+  background: rgba(255,255,255,0.85);
+  border-radius: 0.25em;
+
+  @media (max-width: 1024px) {
+  }
+
+  &::after {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    background: rgba(255,255,255,0.85);
+    border-radius: 0.25em;
+    content: '';
+  }
+
+  .case-study-title {
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    color: #b48505;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding-top: 2em;
+    z-index: 100;
+  }
+
+  &:hover {
+    transition: 0.5s;
+    transform: scale(1.0125);
+
+    &::after {
+      opacity: 1;
+    }
+
+    .case-study-title {
+      opacity: 1;
+    }
+  }
+}

@@ -47,7 +47,7 @@ gulp.task('images', () =>
 gulp.task('build-jekyll-dev', shell.task(['bundle exec jekyll build --baseurl "" --incremental']));
 
 // Build Jekyll Prod
-gulp.task('build-jekyll-prod', shell.task(['bundle exec jekyll build --baseurl "/design" --incremental']));
+gulp.task('build-jekyll-prod', shell.task(['bundle exec jekyll build --baseurl "/web-approach-corp" --incremental']));
 
 // Project Build Options
 gulp.task('default', ['serve']);

@@ -9,22 +9,20 @@ $paragraph-font-size-sm: 14px;
 $paragraph-font-size-xs: 12px;
 
 html {
-    
-    font-size: $html-font-size-lg;
-    line-height: 23px;
-    
-    @media (max-width: 1024px) {
-        font-size: $html-font-size-md;
-    }
-    
-    @media (max-width: 640px) {
-        font-size: $html-font-size-sm;
-    }
-    
-    @media (max-width: 480px) {
-        font-size: $html-font-size-xs;
-    }
-    
+  font-size: $html-font-size-lg;
+  line-height: 23px;
+  
+  @media (max-width: 1024px) {
+      font-size: $html-font-size-md;
+  }
+  
+  @media (max-width: 640px) {
+      font-size: $html-font-size-sm;
+  }
+  
+  @media (max-width: 480px) {
+      font-size: $html-font-size-xs;
+  }
 }
 
 p {
@@ -45,11 +43,20 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Comfortaa', cursive;
+  line-height: 48px;
 }
 
 h1 {
   font-size: 3em;
   padding: 0.5em 0.25em 0.75em;
+
+  @media (max-width: 1024px) {
+    font-size: 2.6em;
+  }
+
+  @media (max-width: 480px) {
+      font-size: 2.2em;
+  }
 }
 
 h2 {

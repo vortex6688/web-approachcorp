@@ -1,0 +1,23 @@
+// header
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 2em;
+  font-family: 'Comfortaa', cursive;
+
+  nav {
+      display: flex;
+  }
+
+  a {
+    padding-right: 1em;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.125);
+      transition: 0.5s;
+    }
+  }
+}
