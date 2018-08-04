@@ -20,6 +20,9 @@
 <body>
     <!-- desktop nav -->
 <header class="">
+  <div class="nav-trigger" onclick="navToggle()">
+    <img class="trigger-open" src="/web-approach-corp/images/nav-open.svg" />
+  </div>
   <nav>
     <a href="/web-approach-corp/" class="button-round"><h5>Home</h5></a>
     <a href="/web-approach-corp/portfolio" class="button-round"><h5>Portfolio</h5></a>
@@ -40,6 +43,14 @@
   <div>
     All rights reserved, vortex, 2018
   </div>
+
+  <script>
+    navToggle = () => {
+      document.querySelector("header").classList.toggle('open');
+      document.querySelector(".trigger-open").classList.toggle('close');
+    }
+
+  </script>
 </footer>
 </body>
 </html>

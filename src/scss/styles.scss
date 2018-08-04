@@ -32,6 +32,10 @@ body {
   @media (max-width: 1024px) {
     max-width: 1024px;
   }
+
+  @media (max-width: 480px) {
+    padding: 0;
+  }
 }
 
 .desktop-svg {
@@ -40,7 +44,7 @@ body {
 }
 
 .resume {
-  margin: 4em 0 2em;
+  margin: 4em 0.5em 2em 0.5em;
   max-width: 1024px;
 
   ul {

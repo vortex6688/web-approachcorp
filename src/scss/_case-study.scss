@@ -5,6 +5,14 @@
   margin: 2em 0;
   display: grid;
   grid-template-columns: auto auto auto;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: auto auto;
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: auto;
+  }
 }
 
 .case-study {
@@ -16,9 +24,6 @@
   padding: 0.5em;
   background: rgba(255,255,255,0.85);
   border-radius: 0.25em;
-
-  @media (max-width: 1024px) {
-  }
 
   &::after {
     height: 100%;
@@ -41,6 +46,10 @@
     text-align: center;
     padding-top: 2em;
     z-index: 100;
+
+    @media (max-width: 640px) {
+      font-size: 1.5em;
+    }
   }
 
   &:hover {
