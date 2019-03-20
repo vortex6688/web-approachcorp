@@ -2,7 +2,18 @@
 
 // Display Utilities
 
-  //Flex
+  // Grid
+  .grid {
+    display: grid;
+  }
+  .column-gap-1 {
+    grid-column-gap: 1em;
+  }
+  .row-gap-1 {
+    grid-row-gap: 1em;
+  }
+
+  // Flex
   .flex {
     display: flex;
   
@@ -162,10 +173,21 @@
   .ml-2 {
     margin-left: 2em;
   }
+  .mx-2 {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .my-2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
   
 // Rounding corners 
   
   // Slightly round up corners
+  .round-025 {
+    border-radius: .25em;
+  }
   .round-1 {
     border-radius: 1em;
   }

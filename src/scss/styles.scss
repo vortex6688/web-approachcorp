@@ -1,11 +1,12 @@
 @import "reset";
 @import "variables";
-@import "utilities";
 @import "base";
-@import "button";
-@import "header";
-@import "footer";
-@import "case-study";
+@import "utilities";
+@import "components/case-study";
+@import "components/button";
+@import "components/check-list";
+@import "partials/header";
+@import "partials/footer";
 
 html {
   height: 100%;
@@ -36,7 +37,7 @@ body {
   }
 
   @media (max-width: 480px) {
-    padding: 0;
+    padding: 0 0.5em;
   }
 }
 
@@ -48,15 +49,6 @@ body {
 .resume {
   margin: 4em 0.5em 2em 0.5em;
   max-width: 1024px;
-
-  ul {
-    text-align: left;
-    font-size: 1.25em;
-
-    li {
-      padding: 0.25em 0;
-    }
-  }
 }
 
 .headshot {

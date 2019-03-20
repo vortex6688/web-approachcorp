@@ -5,10 +5,4 @@
 
 ul {
   list-style-type: none;
-
-  li:before {
-    content: '✓';
-    padding-right: 0.5em;
-    color: #198b56;
-  }
 }

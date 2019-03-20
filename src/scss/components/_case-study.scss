@@ -1,9 +1,7 @@
-// Case Study block 
+// Case Study Component 
 // Should Be Re-used For any additional case studies 
-// Portfolio Parent Container sets the number of columns displayed and scales depending on the screen size
-.portfolio {
-  margin: 2em 0;
-  display: grid;
+// Portfolio-grid Parent Container sets the number of columns displayed and scales depending on the screen size
+.portfolio-grid {
   grid-template-columns: auto auto auto;
 
   @media (max-width: 1024px) {
@@ -16,11 +14,11 @@
 }
 
 .case-study {
+  display: grid;
+  transform: scale(1);
   transition: 0.5s;
   position: relative;
   margin: 0.5em;
-  transform: scale(1);
-  display: grid;
   padding: 0.5em;
   background: rgba(255,255,255,0.85);
   border-radius: 0.25em;
