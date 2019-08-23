@@ -751,6 +751,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Comfortaa', cursive;
 }
 
+.portfolio h4 {
+  font-size: 1.5em;
+}
+
 .portfolio-grid {
   grid-template-columns: auto auto auto;
 }
@@ -769,12 +773,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .case-study {
   display: grid;
+  grid-template-rows: [title] 48px [image] auto;
   transform: scale(1);
   transition: 0.5s;
   position: relative;
   margin: 0.5em;
   padding: 0.5em;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0.25em;
+}
+
+.case-study img {
   border-radius: 0.25em;
 }
 
@@ -790,35 +799,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .case-study .case-study-title {
-  position: absolute;
-  opacity: 0;
+  padding: 0.25em;
   transition: 0.5s;
   color: #b48505;
   font-weight: bold;
   width: 100%;
   text-align: center;
-  padding-top: 2em;
   z-index: 100;
 }
 
 @media (max-width: 1024px) {
   .case-study .case-study-title {
-    position: absolute;
-    opacity: 1;
-    transition: 0.5s;
-    color: #b48505;
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
-    padding-top: 0;
-    z-index: 100;
-    margin-top: -1.5em;
+    grid-template-rows: [title] 40px [image] auto;
   }
 }
 
 @media (max-width: 640px) {
   .case-study .case-study-title {
-    font-size: 1.5em;
+    grid-template-rows: [title] 20px [image] auto;
   }
 }
 
@@ -828,10 +826,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .case-study:hover::after {
-  opacity: 1;
-}
-
-.case-study:hover .case-study-title {
   opacity: 1;
 }
 
