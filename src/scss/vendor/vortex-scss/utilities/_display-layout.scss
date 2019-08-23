@@ -1,0 +1,86 @@
+// Display Utilities / Layouts
+
+// Grid
+.grid {
+  display: grid;
+}
+.column-gap-1 {
+  grid-column-gap: 1em;
+}
+.row-gap-1 {
+  grid-row-gap: 1em;
+}
+
+// Flexbox utilities
+.flex {
+  display: flex;
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
+.column {
+  flex-direction: column;
+}
+.space-start {
+  justify-content: start;
+}
+.space-around {
+  justify-content: space-around;
+}
+.justify-center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-baseline {
+  align-items: baseline;
+}
+.align-self-center {
+  align-self: center;
+}
+
+/* --- Sticky Footer Layout--- */
+// Flexbox sticky footer approach
+// In order for this layout to work, class .stivky footer must be applied on the html, body tags and also body must contain 
+// an element (section or div) that also has a class .sticky-footer in order to push footer to the bottom of the page,
+// even if there is no content on the page, the footer will still be attached to the bottom of the page.
+html.sticky-footer {
+  height: 100%;
+
+  // .sticky-footer class gives the body tag flex layout, column direction and minimum height 100% 
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+}
+
+// Content area
+// .sticky-footer class must be applied on the content section located inside your "body" tag, so it would push the footer to the bottom
+section.sticky-footer,
+div.sticky-footer {
+  display: flex;
+  flex: 1 auto;
+}
+/* --- Sticky Footer Layout Ends --- */
+
+// Additionally, we can specify the layout for the content in the content section
+
+// Use .centered class to center content inside your content section tag vertically and horizontally
+.centered {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+// Use .center-top class to center content inside the section tag horizontally
+.center-top {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

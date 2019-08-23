@@ -1,0 +1,48 @@
+// Font size variables
+
+// Screen size "1024px" and smaller will be concidered as Medium (md)
+// Screen size "640px" and smaller will be concidered as Small (sm)
+
+// Breakpoint varibles that are used for "min-width" cases 
+$xl-and-up: 1600px;
+$lg-and-up: 1200px;
+$md-and-up: 1024px;
+$sm-and-up: 640px;
+$xs-and-up: 320px;
+
+// Breakpoint varibles that are used for "max-width" cases 
+$xl-and-down: 1599px;
+$lg-and-down: 1199px;
+$md-and-down: 1023px;
+$sm-and-down: 639px;
+$xs-and-down: 319px;
+
+$html-font-size-xl: 18px;
+$html-font-size-lg: 16px;
+$html-font-size-md: 15px;
+$html-font-size-sm: 14px;
+$html-font-size-xs: 13px;
+
+$paragraph-font-size-xl: 22px;
+$paragraph-font-size-lg: 20px;
+$paragraph-font-size-md: 18px;
+$paragraph-font-size-sm: 16px;
+$paragraph-font-size-xs: 14px;
+
+$h1: 3em;
+$h2: 2.6em;
+$h3: 2.2em;
+$h4: 1.8em;
+$h5: 1.2em;
+
+// Colors variables
+$black: #000;
+$black-100: #121111;
+$black-200: #1a1919;
+$red: #d34836;
+$maroon: #291b1b;
+$grey: #656668;
+$green: #00ab3e;
+$green-juicy: #549500;
+$orange: #e2610a;
+$white: #fff;

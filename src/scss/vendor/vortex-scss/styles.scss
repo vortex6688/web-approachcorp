@@ -1,0 +1,37 @@
+@import "reset";
+@import "variables";
+@import "base";
+@import "components/button";
+@import "components/form";
+@import "components/headings";
+@import "components/list-styling";
+@import "components/navigation";
+@import "partials/header";
+@import "partials/footer";
+@import "utilities/utilities";
+
+body {
+  // Dark theme is the default theme
+  // Default background Dark Grey color (or $black-200)
+  &.dark-theme {
+    background: $black-200;
+    color: $white;
+  }
+
+  &.light-theme {
+    background: $white;
+    color: $black;
+  }
+}
+
+.highlight {
+  color: #e2610a;
+}
+
+// Break points:
+
+// xl(extra large) 1600px and up
+// lg(large) 1200px - 1599px
+// md(medium) 1024px - 1199px
+// sm(small) 640px - 1023px
+// xs(extra small) 320px - 639px 

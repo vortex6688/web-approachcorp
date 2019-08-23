@@ -1,9 +1,6 @@
-@import "reset";
-@import "variables";
+@import "vendor/vortex-scss/styles.scss";
 @import "base";
-@import "utilities";
 @import "components/case-study";
-@import "components/button";
 @import "components/check-list";
 @import "partials/header";
 @import "partials/footer";

@@ -1,0 +1,11 @@
+// Suggested variation of list items decoration
+
+// ul check styling 
+ul.check-list {
+  li:before,
+  .li:before {
+    content: '✓';
+    padding-right: 0.5em;
+    color: $green;
+  }
+}

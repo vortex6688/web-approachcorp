@@ -1,15 +1,8 @@
 // Resume list component styling
 // Each "li" element must be placed inside the parent "ul" element that includes class ".resume"
 .check-list {
-  text-align: left;
   font-size: 1.25em;
   li {
     margin-bottom: 0.5em;
-  }
-
-  li:before {
-    content: '✓';
-    padding: 0.5em;
-    color: #198b56;
   }
 }

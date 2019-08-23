@@ -1,0 +1,58 @@
+// Text / Font Utilities
+  
+  // Text positioning, transform, etc...
+  .center {
+    text-align: center;
+  }
+  .left {
+    text-align: left;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .capitalize {
+    text-transform: capitalize;
+  }
+
+  // Text variations
+  .cursive {
+    font-family: cursive;
+  }
+
+  // Text Colors
+  .c-black {
+    color: $black;
+  }
+  .c-white {
+    color: $white;
+  }
+  // .c-success class sets a darker green color on the chosen text elements
+  .c-success {
+    color: $green;
+  }
+  // .c-green class sets a juicy green color on the chosen text elements
+  .c-green {
+    color: $green-juicy;
+  }
+  .c-red {
+    color: $red;
+  }
+  .c-orange {
+    color: $orange;
+  }
+
+  // Font Weight 
+  .bold {
+    font-weight: 700;
+  }
+  .normal {
+    font-weight: 400;
+  }
+  .skinny {
+    font-weight: 100;
+  }
+
+  // Font Family
+  .cursive {
+    font-family: cursive;
+  }

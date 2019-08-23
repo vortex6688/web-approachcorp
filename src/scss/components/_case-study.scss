@@ -45,6 +45,19 @@
     padding-top: 2em;
     z-index: 100;
 
+    // On mobile devices project titles are are always visible and plaed above the image
+    @media (max-width: 1024px) {
+      position: absolute;
+      opacity: 1;
+      transition: 0.5s;
+      color: #b48505;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+      padding-top: 0;
+      z-index: 100;
+      margin-top: -1.5em;
+    }
     @media (max-width: 640px) {
       font-size: 1.5em;
     }
