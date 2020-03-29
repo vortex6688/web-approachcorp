@@ -18,7 +18,7 @@ email: vortex6688@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   The Web Approach Corp brings the best of web technologies together 
   to serve your business and present your ideas in the web space.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/web-approach-corp" # the subpath of your site, e.g. /blog, in case of custom domain, baseurl should be left empty, or to preview on the local port server, simply run " jekyll serve --baseurl '' "
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
